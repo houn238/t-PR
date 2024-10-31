@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<title>Page5.html</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+			background-color: #ccd4db;
+		}
+		#Carte {
+			margin-top: 20px;
+			padding: 20px;
+			background-color:#ffffff1e;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+		h1, h2 {
+			color: #343a40;
+		}
+		.fw-bold {
+			font-weight: bold;
+		}
+		.display-5
+		{
+		    color: rgb(2, 2, 36);
+		}
+		.text-center img {
+			width: 60%;
+			height: auto;
+		}
+		.arrow {
+            font-size: 5rem; /* Taille de la flèche */
+            color: rgba(3, 3, 61, 0.753); /* Couleur de la flèche */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s; /* Smooth transition */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .d-flex:hover .arrow {
+            opacity: 1; /* Show arrows on hover */
+        }
+	</style>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+	<div class="container"> 
+		<div id="Carte" class="text-center mb-4">
+			<div class="d-flex justify-content-between">
+				<a href="https://www.PigierBenin.com" class="d-inline-block">
+					<img src="C:\Users\RCA\Downloads\pig.png" alt="Pigier Benin Logo" class="rounded float-start img-thumbnail" style="width: 60%; height: auto;">
+				</a>
+				
+				<h1 class="fw-bold mx-3">
+					TABLEAUX DU CLASSEMENTS
+				</h1>
+		
+				<a href="Page6.html" class="d-inline-block">
+					<img src="C:\Users\RCA\Downloads\pig.png" alt="Pigier Benin Logo" class="rounded float-end img-thumbnail" style="width: 60%; height: auto;">
+				</a>
+			</div>
+		</div>
+<center> 
+<table border="3" style="border-collapse: collapse;">
+		<caption><strong>Tableau Simple</strong></caption>
+	<tr>
+		<td>Carmen</td>
+		<td>33ans</td>
+		<td>Espagne</td>
+	</tr>
+
+	<tr>
+		<td>Michelle</td>
+		<td>26ans</td>
+		<td>Etat-Unis</td>
+	</tr>	
+</table>
+
+<table border="3" style="border-collapse: collapse;">
+	<tr>
+		<td>Nom</td>
+		<td>Age</td>
+		<td>Pays</td>
+	</tr>
+
+	<tr>
+		<td>Carmen</td>
+		<td>33ans</td>
+		<td>Espagne</td>
+	</tr>
+
+	<tr>
+		<td>Michelle</td>
+		<td>26ans</td>
+		<td>Etat-Unis</td>
+	</tr>	
+</table>
+
+<table border="3" style="border-collapse: collapse;">
+	<caption><strong>Passagers du vol377</strong></caption>
+	<tr>
+		<td>Nom</td>
+		<td>Age</td>
+		<td>Pays</td>
+	</tr>
+
+	<tr>
+		<td>Carmen</td>
+		<td>33ans</td>
+		<td>Espagne</td>
+	</tr>
+
+	<tr>
+		<td>Michelle</td>
+		<td>26ans</td>
+		<td>Etat-Unis</td>
+	</tr>	
+</table>
+
+<table border="3" style="border-collapse: collapse;">
+	<caption><strong>Passagers du vol377</strong></caption>
+	<thead>
+	<tr>
+		<td>Nom</td>
+		<td>Age</td>
+		<td>Pays</td>
+	</tr>
+	</thead>
+
+    <tfoot>
+    <tr>
+		<td>Nom</td>
+		<td>Age</td>
+		<td>Pays</td>
+	</tr>
+    </tfoot>
+
+	<tbody>
+	<tr>
+		<td>Carmen</td>
+		<td>33ans</td>
+		<td>Espagne</td>
+	</tr>
+
+	<tr>
+		<td>Michelle</td>
+		<td>26ans</td>
+		<td>Etat-Unis</td>
+	</tr>	
+
+    <tr>
+		<td>François</td>
+		<td>43ans</td>
+		<td>France</td>
+	</tr>
+
+	<tr>
+		<td>Martine</td>
+		<td>34ans</td>
+		<td>France</td>
+	</tr>
+
+	<tr>
+		<td>Jonathan</td>
+		<td>13ans</td>
+		<td>Australie</td>
+	</tr>	
+
+    <tr>
+		<td>Xu</td>
+		<td>19ans</td>
+		<td>Chine</td>
+	</tr>	
+	</tbody>
+</table>
+
+<table border="3" style="border-collapse: collapse;">
+	<caption>Fusionner des cellules</caption>
+	<tr>
+		<th>Titre du film</th>
+		<th>Pour enfants</th>
+		<th>Pour adoloscents ?</th>
+	</tr>
+	
+	<tr>
+		<td>Massacre à la tronçonneuse</td>
+		<td>Non,trop violent</td>
+		<td>Oui</td>
+	</tr>
+	<tr>
+		<td>Les bisounours font du ski</td>
+		<td>Oui ,adapté</td>
+		<td>Pas assez violent...</td>
+	</tr>
+
+	<tr>
+		<td>Lucky Luke,seul contre tous</td>
+		<td colspan="2"><center>Pour toute la famille!</center></td>
+	</tr>
+</table>
+
+<table border="3" style="border-collapse: collapse;">
+	<tr>
+		<th>Titre du film</th>
+		<td>Massacre à la tronçonneuse</td>
+		<td>Les bisounours font du ski</td>
+		<td>Lucky Luke,seul contre tous</td>
+	</tr>
+	
+	<tr>
+		<th>Pour enfants ?</th>
+		<td>Non,trop violent</td>
+		<td>Oui ,adapté</td>
+	</tr>
+
+	<tr>
+		<th>Pour adoloscents ?</th>
+		<td>Oui</td>
+		<td>Pas assez violent...</td>
+		<td colspan="2"><center>Pour toute la famille!</center></td>
+	</tr>
+</table>
+
+<table border="3" style="border-collapse: collapse;">
+
+	<caption><u><a href="Page4.html">Liste Des Etudiants</a></u></caption>
+
+<tbody>
+    <tr>
+		<th>N°</th>
+		<th>Nom</th>
+		<th>Prénom</th>
+		<th>Contact</th>
+		<th>Status</th>
+	</tr>
+		
+	 <tr class="Admis" id="ligne1">
+		<td>1</td>
+		<td style="	font-style: italic;">HAINE</td>
+		<td>Couper</td>
+		<td style="color: blue;font-weight: bold;">65765483</td>
+		<td>Admis</td>
+	 </tr>  
+
+	<tr class="Enjambement">
+		<td>2</td>
+		<td>BRES</td>
+		<td>Adore</td>
+		<td>98754676</td>
+		<td>Enjambement</td>
+			
+	</tr>
+
+	<tr class="Admis">
+		<td>3</td>
+		<td>MIKA</td>
+		<td>Béré</td>
+		<td>98754446</td>
+		<td>Admis</td>	
+	</tr>
+
+	<tr class="Admis">
+
+		<td>4</td>
+		<td>LEBANQUIER</td>
+		<td>Manu</td>
+		<td>91704676</td>
+		<td>Admis</td>	
+	</tr>
+
+	<tr class="Enjambement">
+		<td>5</td>
+		<td>LEPHYSIMENT</td>
+		<td>Stéphie</td>
+		<td>90876543</td>
+		<td>Enjambement</td>
+	</tr>
+
+	<tr class="Refusé">
+		<td>6</td>
+		<td>HOMME-NOIR</td>
+		<td>Deux Os</td>
+		<td>90800543</td>
+		<td>Refusé</td>
+	</tr>
+		
+	<tr class="Refusé">
+		<td>7</td>
+		<td>BACHEMO</td>
+		<td>Martial</td>
+		<td>90110543</td>
+		<td>Refusé</td>
+	</tr>
+
+	<tr class="Admis">
+		<td>8</td>
+		<td>GROS</td>
+		<td>Bédel</td>
+		<td>91916543</td>
+		<td>Admis</td>
+	</tr>
+
+	<tr class="Admis">
+		<td>9</td>
+		<td>AROBAS</td>
+		<td>LeLyon</td>
+		<td>61296543</td>
+		<td>Admis</td>
+	</tr>
+
+	<tr class="Refusé">
+		<td>10</td>
+		<td>TALON</td>
+		<td>Patrice</td>
+		<td>44567803</td>
+		<td>Refusé</td>
+	</tr>
+
+	<tr class="Enjambement">
+		<td>11</td>
+		<td>BELLE</td>
+		<td>Lacoste</td>
+		<td>94567990</td>
+		<td>Enjambrement</td>
+	</tr>
+
+	<tr class="Enjambement">
+		<td>12</td>
+		<td>ATIMBOU</td>
+		<td>LeMilliardaire</td>
+		<td>94522990</td>
+		<td>Enjambement</td>
+	</tr>
+
+	<tr class="Enjambement">
+		<td>13</td>
+		<td>SAGBA</td>
+		<td>LeRecain</td>
+		<td>94522130</td>
+		<td>Enjambement</td>
+	</tr>
+
+	<tr class="Admis">
+		<td>14</td>
+		<td>POGBA</td>
+		<td>Paul</td>
+		<td>67912990</td>
+		<td>Admis</td>
+	</tr>
+
+	<tr class="Enjambement">
+		<td>15</td>
+		<td>SAMO</td>
+		<td>Samo</td>
+		<td>66789080</td>
+		<td>Enjambement</td>
+	</tr>
+
+	<tr class="Admis">
+		<td>16</td>
+		<td>BOSS</td>
+		<td>Molard</td>
+		<td>67917790</td>
+		<td>Admis</td>
+	</tr>
+
+	<tr class="Admis">
+		<td>17</td>
+		<td>KING</td>
+		<td>Nasir</td>
+		<td>67243580</td>
+		<td>Admis</td>
+	</tr>
+
+	<tr class="Refusé">
+		<td>18</td>
+		<td>DOLLAR</td>
+		<td>Junior</td>
+		<td>41157803</td>
+		<td>Refusé</td>
+	</tr>
+
+	<tr class="Admis">
+		<td>19</td>
+		<td>LEPÈRE</td>
+		<td>Morata</td>
+		<td>42912990</td>
+		<td>Admis</td>
+	</tr>
+
+	<tr class="Admis">
+		<td>20</td>
+		<td>PRÉSIDENT</td>
+		<td>Stratord</td>
+		<td>65512990</td>
+		<td>Admis</td>
+	</tr>
+</tbody>
+</table>
+
+<table border="3" style="border-collapse: collapse;">
+	<caption><u><strong>Filières</strong></u></caption>
+	<tr>
+		<td style="color: green;" colspan="2">RGL</td>
+        <td rowspan="2">GTL</td>
+	</tr>
+
+	<tr>
+		<td style="color:green;">RMS</td>
+		<td rowspan="2">EGP</td>
+	</tr>
+
+	<tr>
+		<td>CG</td>
+		<td>CDM</td>
+	</tr>
+
+</table>
+</center>
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <a href="Page4.html">
+      <i style=" margin-left: 900px;" class="fas fa-arrow-left arrow" onclick="goToPreviousPage()"></i>
+    </a>
+   <a href="Page6.html">
+    <i style="margin: 800px;" class="fas fa-arrow-right arrow" onclick="goToNextPage()"></i>
+   </a>   
+</div>
+
+<script>
+function goToPreviousPage() {
+window.history.back(); // Navigate to the previous page
+}
+
+function goToNextPage() {
+window.location.href = "nextPageURL.html"; // Replace with the URL of the next page
+}
+</script>
+
+		<!-- Lien vers Bootstrap JS et jQuery (optionnel) -->
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<div class="btn-group me-2" role="group" aria-label="First group">
+			<a href="Page1.html" class="d-inline-block">
+			<button type="button" class="btn btn-primary">1</button>
+		</a>
+		<a href="Page2.html" class="d-inline-block">
+			<button type="button" class="btn btn-primary">2</button>
+		</a>
+		<a href="Page3.html" class="d-inline-block">
+			<button type="button" class="btn btn-primary">3</button>
+		</a>
+		<a href="Page4.html" class="d-inline-block">
+			<button type="button" class="btn btn-primary">4</button>
+		</a>
+		</div>
+		<div class="btn-group me-2" role="group" aria-label="Second group">
+		<a href="Page5.html" class="d-inline-block">   
+			<button type="button" class="btn btn-secondary">::</button>
+		</a>
+		<a href="Page6.html" class="d-inline-block">
+			<button type="button" class="btn btn-secondary">6</button>
+		</a>
+		</div>
+		<div class="btn-group" role="group" aria-label="Third group">
+		<a href="Cv.html" class="d-inline-block">
+			<button type="button" class="btn btn-info">7</button>
+		</a>
+		<a href="Frames.html" class="d-inline-block">
+			<button type="button" class="btn btn-info">8</button>
+		</a>
+		</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</DIV>
+</body>
+</html>

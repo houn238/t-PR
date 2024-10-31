@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page6.html</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            background-color:  #ccd4db;
+        }
+        #Carte {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        .fw-bold {
+            font-weight: bold;
+        }
+        .display-5 {
+            color: rgb(2, 2, 36);
+        }
+        .text-center img {
+            width: 20%;
+            height: auto;
+        }
+        
+		.message {
+            display: none; /* Masquer le message par défaut */
+            margin-top: 20px;
+            color: rgb(0, 8, 0);
+			font-size: larger;
+			background-color: rgb(60, 60, 219);
+        }
+        .arrow {
+            font-size: 5rem; /* Taille de la flèche */
+            color: rgba(3, 3, 61, 0.753); /* Couleur de la flèche */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s; /* Smooth transition */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .d-flex:hover .arrow {
+            opacity: 1; /* Show arrows on hover */
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <center>
+        <div class="container"> 
+            <div id="Carte" class="text-center mb-4">
+                <div class="d-flex justify-content-between">
+                    <a href="https://www.PigierBenin.com" class="d-inline-block">
+                        <img src="C:\Users\RCA\Downloads\pig.png" alt="Pigier Benin Logo" class="rounded float-start img-thumbnail" style="width: 60%; height: auto;">
+                    </a>
+                    
+                    <h1 class="fw-bold mx-3">
+                        FICHE DE RENSEIGNEMENT
+                    </h1>
+            
+                    <a href="Cv.html" class="d-inline-block">
+                        <img src="C:\Users\RCA\Downloads\pig.png" alt="Pigier Benin Logo" class="rounded float-end img-thumbnail" style="width: 60%; height: auto;">
+                    </a>
+                </div>
+            </div>
+            <form id="myForm" onsubmit="handleSubmit(event);">
+                <fieldset>
+                    <legend style="color:green;"><strong>Vos Coordonnées</strong></legend>
+                    
+                    <label for="nom">Quel est votre nom ?</label><br/>
+                    <input type="text" name="nom" id="nom" tabindex="10" required/><br/>
+
+                    <label for="prenom">Quel est votre prenom ?</label><br/>
+                    <input type="text" name="prenom" id="prenom" tabindex="20" required/><br/>
+
+                    <label for="email">Quel est votre e-mail ?</label><br/>
+                    <input type="email" name="email" id="email" tabindex="30" required/><br/>
+                </fieldset>
+                
+                <fieldset>
+                    <legend style="color:green"><strong>Votre Souhait</strong></legend>
+
+                    <p>
+                        Faites un souhait que vous voudriez voir exaucé: <br/>
+                        <input type="checkbox" name="souhait" value="riche" id="riche" tabindex="40"/><label for="riche">Etre riche</label><br/>
+                        <input type="checkbox" name="souhait" value="celebre" id="celebre" tabindex="50"/><label for="celebre">Etre celebre</label><br/>
+                        <input type="checkbox" name="souhait" value="intelligent" id="intelligent" tabindex="60"/><label for="intelligent">Etre <strong>Encore</strong> plus intelligent</label
+						<input type="checkbox" name="souhait" value="autre" id="autre" tabindex="70"/><label for="autre">Autre...</label><br/>
+						</p>
+	
+						<p>
+							<textarea name="precisions" id="precisions" cols="40" rows="4" tabindex="80"></textarea>
+						</p>
+					</fieldset>
+	
+					<p>
+						<button type="submit" style="background-color: green;" class="btn btn-primary">Envoyer</button>
+						<button type="reset" style="background-color: red;" class="btn btn-secondary">Réinitialiser</button>
+					</p>
+					
+				</form>
+						<div id="confirmationMessage" class="message">
+							Vos informations ont été enregistrées avec succès !
+						</div>
+                        <div class="d-flex justify-content-center align-items-center vh-100">
+                            <a href="Page5.html">
+                              <i style=" margin-left: 900px;" class="fas fa-arrow-left arrow" onclick="goToPreviousPage()"></i>
+                            </a>
+                           <a href="Cv.html">
+                            <i style="margin: 800px;" class="fas fa-arrow-right arrow" onclick="goToNextPage()"></i>
+                           </a>   
+                        </div>
+                        
+                        <script>
+                        function goToPreviousPage() {
+                        window.history.back(); // Navigate to the previous page
+                        }
+                        
+                        function goToNextPage() {
+                        window.location.href = "nextPageURL.html"; // Replace with the URL of the next page
+                        }
+                        </script>
+	
+				<div class="btn-group me-2" role="group" aria-label="First group">
+					<a href="Page1.html" class="d-inline-block">
+						<button type="button" class="btn btn-primary">1</button>
+					</a>
+					<a href="Page2.html" class="d-inline-block">
+						<button type="button" class="btn btn-primary">2</button>
+					</a>
+					<a href="Page3.html" class="d-inline-block">
+						<button type="button" class="btn btn-primary">3</button>
+					</a>
+					<a href="Page4.html" class="d-inline-block">
+						<button type="button" class="btn btn-primary">4</button>
+					</a>
+				</div>
+				<div class="btn-group me-2" role="group" aria-label="Second group">
+					<a href="Page5.html" class="d-inline-block">   
+						<button type="button" class="btn btn-secondary">5</button>
+					</a>
+					<a href="Page6.html" class="d-inline-block">
+						<button type="button" class="btn btn-secondary">::</button>
+					</a>
+				</div>
+				<div class="btn-group" role="group" aria-label="Third group">
+					<a href="Cv.html" class="d-inline-block">
+						<button type="button" class="btn btn-info">7</button>
+					</a>
+					<a href="Frames.html" class="d-inline-block">
+						<button type="button" class="btn btn-info">8</button>
+					</a>
+				</div>
+			</div>
+		</center>
+	
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			function handleSubmit(event) {
+				event.preventDefault(); // Empêche l'envoi du formulaire
+	
+				// Simule un chargement de 2 secondes
+				setTimeout(function() {
+					// Affiche le message de confirmation
+					document.getElementById('confirmationMessage').style.display = 'block';
+					// Réinitialise le formulaire
+					document.getElementById('myForm').reset();
+				}, 2000);
+			}
+		</script>
+	</body>
+	</html>

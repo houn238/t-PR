@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Page4.html</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+            background-color:#ccd4db; /* Couleur de fond douce */
+        }
+        #Carte {
+            margin-top: 20px;
+            padding: 20px;
+            background-color:#ffffff1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        .fw-bold {
+            font-weight: bold;
+        }
+        .display-5 {
+            color: rgb(2, 2, 36);
+        }
+        .text-center img {
+            width: 60%;
+            height: auto;
+        }
+        .list-group-item {
+            background-color: #f8f9fa; /* Couleur d'arrière-plan des éléments de liste */
+            border: none; /* Supprime les bordures */
+        }
+        .arrow {
+            font-size: 5rem; /* Taille de la flèche */
+            color: rgba(3, 3, 61, 0.753); /* Couleur de la flèche */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s; /* Smooth transition */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        .d-flex:hover .arrow {
+            opacity: 1; /* Show arrows on hover */
+        }
+    </style>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="container"> 
+    <div id="Carte" class="text-center mb-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <a href="https://www.PigierBenin.com" class="d-inline-block">
+                <img src="C:\Users\RCA\Downloads\pig.png" alt="Pigier Benin Logo" class="rounded float-start img-thumbnail">
+            </a>
+            
+            <h1 class="fw-bold mx-3">CLASSEMENTS</h1>
+    
+            <a href="Page5.html" class="d-inline-block">
+                <img src="C:\Users\RCA\Downloads\pig.png" alt="Pigier Benin Logo" class="rounded float-end img-thumbnail">
+            </a>
+        </div>
+    </div>
+
+    <h2 class="display-5 text-center">Quelques listes non ordonnées</h2>
+    <div class="card mb-4">
+        <div class="card-body">
+            <p>Voici une liste à puce non ordonnée sans modification (= <em>disc</em>) :</p>
+            <ul>
+                <li>Liste</li>
+                <li>à</li>
+                <li>puces</li>
+            </ul>
+            <p>Avec <em>circle</em> :</p>
+            <ul class="list-circle">
+                <li>Liste</li>
+                <li>à</li>
+                <li>puces</li>
+            </ul>
+            <p>Avec <em>square</em> :</p>
+            <ul class="list-square">
+                <li>Liste</li>
+                <li>à</li>
+                <li>puces</li>
+            </ul>
+            <p>Avec <em>none</em> (sans puces) :</p>
+            <ul class="list-none">
+                <li>Liste</li>
+                <li>à</li>
+                <li>puces</li>
+            </ul>
+        </div>
+    </div>
+
+    <h2 class="display-5 text-center">Quelques listes ordonnées</h2>
+    <div class="card mb-4">
+        <div class="card-body">
+            <p>Liste à puces ordonnée sans modification (= <em>decimal</em>)</p>
+            <ol>
+                <li>Un</li>
+                <li>Deux</li>
+                <li>Trois</li>
+                <li>Quatre</li>
+            </ol>
+            <p>Avec <em>decimal-leading-zero</em> :</p>
+            <ol>
+                <li>Un</li>
+                <li>Deux</li>
+                <li>Trois</li>
+                <li>Quatre</li>
+			<p> Avec <em>lower-alpha</em > :</p> <ol 
+			class="lettres_minuscules">
+			   <li>Un</li>
+			   <li>Deux</li>
+			   <li>Trois</li>
+			   <li>Quatre</li>
+			 </ol>
+			 <p>Avec <em>haut-romain</em> :</p>
+			 <ol class="chiffres_romains">
+			   <li>Un</li>
+			   <li>Deux</li>
+			   <li>Trois</li>
+			   <li>Quatre</li> 
+			</ol> 
+			<p>Avec <em>inférieur-grec</em> (<strong>Ne fonctionne pas sous IE</strong>) :</p>
+		   <ol class="lettres_grecques">
+			 <li>Un</li>
+			 <li>Deux</li>
+			 <li>Trois</li >
+			 <li>Quatre</li> </ol> 
+    </div>
+</div>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" intégrité= "sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
+ <div class="d-flex justify-content-center align-items-center vh-100">
+    <a href="Page3.html">
+      <i style=" margin-left: 900px;" class="fas fa-arrow-left arrow" onclick="goToPreviousPage()"></i>
+    </a>
+   <a href="Page5.html">
+    <i style="margin: 800px;" class="fas fa-arrow-right arrow" onclick="goToNextPage()"></i>
+   </a>   
+</div>
+
+<script>
+function goToPreviousPage() {
+window.history.back(); // Navigate to the previous page
+}
+
+function goToNextPage() {
+window.location.href = "nextPageURL.html"; // Replace with the URL of the next page
+}
+</script>
+
+    <!-- Lien vers Bootstrap JS et jQuery (optionnel) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="btn-group me-2" role="group" aria-label="First group">
+        <a href="Page1.html" class="d-inline-block">
+          <button type="button" class="btn btn-primary">1</button>
+      </a>
+      <a href="Page2.html" class="d-inline-block">
+        <button type="button" class="btn btn-primary">2</button>
+      </a>
+      <a href="Page3.html" class="d-inline-block">
+        <button type="button" class="btn btn-primary">3</button>
+      </a>
+      <a href="Page4.html" class="d-inline-block">
+        <button type="button" class="btn btn-primary">::</button>
+      </a>
+      </div>
+      <div class="btn-group me-2" role="group" aria-label="Second group">
+      <a href="Page5.html" class="d-inline-block">   
+        <button type="button" class="btn btn-secondary">5</button>
+      </a>
+      <a href="Page6.html" class="d-inline-block">
+        <button type="button" class="btn btn-secondary">6</button>
+      </a>
+      </div>
+      <div class="btn-group" role="group" aria-label="Third group">
+      <a href="Cv.html" class="d-inline-block">
+        <button type="button" class="btn btn-info">7</button>
+      </a>
+      <a href="Frames.html" class="d-inline-block">
+          <button type="button" class="btn btn-info">8</button>
+      </a>
+      </div>
+</div>
+</body> 
+</html>

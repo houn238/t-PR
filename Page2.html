@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<title>Page2.html</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+        body {
+            background-color: #ccd4db;
+        }
+        #Carte {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #ffffff1e;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #343a40;
+        }
+        .fw-bold {
+            font-weight: bold;
+        }
+		.display-5
+		{
+           color: blue;
+		}
+        .text-center img {
+            width: 20%;
+            height: auto;
+        }
+		.arrow {
+            font-size: 5rem; /* Taille de la flèche */
+            color: rgba(3, 3, 61, 0.753); /* Couleur de la flèche */
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s; /* Smooth transition */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        .d-flex:hover .arrow {
+            opacity: 1; /* Show arrows on hover */
+        }
+    </style>
+    <!-- Lien vers Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<div class="container">
+	<div id="Carte" class="text-center mb-4">
+		<div class="d-flex justify-content-between">
+			<a href="https://www.PigierBenin.com" class="d-inline-block">
+				<img src="C:\Users\RCA\Downloads\pig.png" alt="Pigier Benin Logo" class="rounded float-start img-thumbnail" style="width: 60%; height: auto;">
+			</a>
+			
+			<h1 class="fw-bold mx-3">
+				INFORMATION PERSONNELLE!
+			</h1>
+	
+			<a href="Page3.html" class="d-inline-block">
+				<img src="C:\Users\RCA\Downloads\pig.png" alt="Pigier Benin Logo" class="rounded float-end img-thumbnail" style="width: 60%; height: auto;">
+			</a>
+		</div>
+	</div>
+       <h2 class="display-5 text-center fw-bold mx-3"><strong><u>
+   		      <li>I-ETAT CIVIL<br>
+   		      </li></u> 
+      </strong></h2> 
+	         <div class="present text-center">
+				<strong><u>Nom: </u>HOUNNOU</strong><br>
+				<strong><u>Prénoms: </u><a href="#Description">Abdoul-Aziz</a></strong><br>
+				<strong><u>Contact: </u>+2291111111</strong><br>
+				<strong><u>Filière: </u>RMS</strong><br>
+             </div>
+			  <div class="card" style="width: 18rem;">
+				<img class="card-img-bottom" src="C:\Users\RCA\Pictures\AzizUsa.jpg" class="rounded float-start" alt="Container" width="20%" height="4%">
+			 <div class="card-body">
+				  <h5 class="card-title">LE MEILLEUR WEBMASTER</h5>
+				  <p class="card-text">Jeune étudiant exemplaire qui à des principes commme:</p>
+				  <a href="Cv.html" class="btn btn-primary">Savoir Plus</a>
+				</div>
+			  </div>
+			 
+    <hr><meta charset="utf-8">
+    <h2 class="display-5 text-center fw-bold mx-3">
+    		    <u>
+   		          <li>II-LES DIPLOMES<br>
+   		           </li>
+   		        </u> 
+    </h2> 
+
+              <strong>1-CEP</strong><br>
+			  <strong>2-BEPC</strong><br>
+			  <strong>3-BAC</strong><br>
+
+    <hr><meta charset="utf-8">
+<h2 class="display-5 text-center fw-bold mx-3" >
+	<strong>
+		    <div id=Description>
+				    <u>
+		   		      <li>III-DESCRIPTION DU LEADER AZIZ<br>
+		   		      </li>
+		   		    </u>
+   		    </div>
+    </strong>
+</h2> 
+    <p class="text-center fw-bold mx-3">
+      	HOUNNOU AbdoulAziz est un étudiant en 2ème année en Réseau Mobilité et sécurité à PigierBenin.<br>
+        Passionné par les technologies de l'information ,il excelle dans ses études et se distingue par sa curiosité intellectuelle.<br> 
+		AbdoulAziz participe activement aux projetsde groupe ,où il démontre ses compétences en collaborationet en leadership.<br>
+        AbdoulAziz aspire à devenir architecte de système d'information et envisage de poursuivre ses études avec un master spécialisé.<br> 
+		Sa détermination et son enthousiame font de lui un modèle pour ses pairs et un atout précieux pour son école<br>
+	</p>
+       </div>
+    </div>
+	<div class="d-flex justify-content-center align-items-center vh-100">
+		<a href="Page1.html">
+	      <i style=" margin-left: 900px;" class="fas fa-arrow-left arrow" onclick="goToPreviousPage()"></i>
+	    </a>
+	   <a href="Page3.html">
+		<i style="margin: 800px;" class="fas fa-arrow-right arrow" onclick="goToNextPage()"></i>
+	   </a>   
+	</div>
+
+<script>
+function goToPreviousPage() {
+window.history.back(); // Navigate to the previous page
+}
+
+function goToNextPage() {
+window.location.href = "nextPageURL.html"; // Replace with the URL of the next page
+}
+</script>
+
+    <!-- Lien vers Bootstrap JS et jQuery (optionnel) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<div class="btn-group me-2" role="group" aria-label="First group">
+		<a href="Page1.html" class="d-inline-block">
+		  <button type="button" class="btn btn-primary">1</button>
+	  </a>
+	  <a href="Page2.html" class="d-inline-block">
+		<button type="button" class="btn btn-primary">::</button>
+	  </a>
+	  <a href="Page3.html" class="d-inline-block">
+		<button type="button" class="btn btn-primary">3</button>
+	  </a>
+	  <a href="Page4.html" class="d-inline-block">
+		<button type="button" class="btn btn-primary">4</button>
+	  </a>
+	  </div>
+	  <div class="btn-group me-2" role="group" aria-label="Second group">
+	  <a href="Page5.html" class="d-inline-block">   
+		<button type="button" class="btn btn-secondary">5</button>
+	  </a>
+	  <a href="Page6.html" class="d-inline-block">
+		<button type="button" class="btn btn-secondary">6</button>
+	  </a>
+	  </div>
+	  <div class="btn-group" role="group" aria-label="Third group">
+	  <a href="Cv.html" class="d-inline-block">
+		<button type="button" class="btn btn-info">7</button>
+	  </a>
+	  <a href="Frames.html" class="d-inline-block">
+		  <button type="button" class="btn btn-info">8</button>
+	  </a>
+	  </div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</div>
+</body>
+</html>

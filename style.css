@@ -1,0 +1,123 @@
+h1
+{
+   color: black;
+}
+ul
+{
+list-style-position: inside;
+}
+
+/* Listes à puces non ordonnées */
+.cercle
+{
+list-style-type: circle;
+list-style-position: inside;
+}
+.carre
+{
+list-style-type:square;
+list-style-position: inside;
+}
+.rien
+{
+list-style-type: none;
+list-style-position: inside;
+}
+.lettre_gras
+{
+list-style-type: decimal-leading-zero;
+list-style-position: inside;
+}
+.commence_a_zero
+{
+list-style-type: decimal;
+list-style-position: inside;
+}
+.lettres_minuscules
+{
+list-style-type: lower-alpha;
+list-style-position: inside;
+}
+
+.chiffres_romains
+{
+list-style-type: upper-roman;
+list-style-position: inside;
+}
+.lettres_grecques
+{
+list-style-type: lower-greek;
+list-style-position: inside;
+}
+/* Quelques styles supplémentairesjuste pour la présentation
+En plus ça vous fait quelques rappels;o) */
+h2
+{
+text-indent: 20px;
+font-family: Arial, Verdana, "Times New Roman", serif;
+}
+em
+{
+background-color: dimgray;
+}
+body
+{
+   background-color:rgba(236, 185, 221, 0.404);
+   text-align: center;
+}
+a 
+{
+  text-align: center;
+  align-content: center;
+}
+.card
+{
+	 margin-left: 800px;
+}
+.present
+{
+	text-align: center;
+	align-content: center;
+}
+.container
+{
+	position: relative;
+	right: 40px;
+	bottom: 25px;
+	margin-left: 8em;
+
+}
+p
+{
+	text-align: center;
+	text-justify: auto;
+}
+dt 
+{
+	font-weight: bold;
+}
+.Admis 
+{
+	 background-color: green;
+}
+.Enjambement
+{
+	 background-color: yellow;
+}
+.Refusé
+{
+	background-color: red;
+}
+caption
+{
+  font-size: 150%;
+  font-weight: bold;
+}
+#ligne1
+{
+  border-style:dotted ;
+}
+table
+{
+  font-size: 120%;
+}
